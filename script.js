@@ -5,8 +5,12 @@ console.log("working");
 // jq
 $(document).bind("mousemove", (e) => {
   $("#follow").css({
-    left: e.pageX + 5,
-    top: e.pageY - 20,
+    left: e.pageX + 15,
+    top: e.pageY + 1,
+  });
+
+  $("#follow").click(function () {
+    $("span").stop();
   });
 });
 

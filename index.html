@@ -6,17 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--CSS-->
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Press Start 2P|"
+    />
 
     <!--JS-->
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.js"
-      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-      crossorigin="anonymous"
-    ></script>
+    <!-- jQuery Modal -->
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
     <script src="script.js" defer></script>
     <title>Test</title>
   </head>
   <body>
-    <div id="follow"><p>Testing</p></div>
+    <!--Start of cursor flag-->
+    <div id="follow">
+      <span style="--i: 1">w</span>
+      <span style="--i: 2">o</span>
+      <span style="--i: 3">r</span>
+      <span style="--i: 4">l</span>
+      <span style="--i: 4">d</span>
+      &nbsp;
+      <span style="--i: 5">o</span>
+      <span style="--i: 6">f</span>
+      &nbsp;
+      <span style="--i: 7">a</span>
+      <span style="--i: 8">w</span>
+      <span style="--i: 9">e</span>
+    </div>
+    <!--End of cursor flag-->
+    <header>
+      <h1>World Of Awe.Travelers Journel</h1>
+      <nav>home</nav>
+    </header>
+    <main>
+      <figure>
+        <a href="./material/html-pages/slide1.html"
+          ><img src="./material/mycomp.png" width="79" height="72"
+        /></a>
+        <figcaption>My Computer</figcaption>
+      </figure>
+      <!-- Modal HTML embedded directly into document -->
+      <div id="ex1" class="modal">
+        <p>Thanks for clicking. That felt good.</p>
+        <a href="#" rel="modal:close">Close</a>
+      </div>
+
+      <!-- Link to open the modal -->
+      <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+    </main>
+    <!-- <footer></footer> -->
   </body>
 </html>
