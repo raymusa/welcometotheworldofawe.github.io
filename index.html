@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css?family=Press Start 2P|"
     />
 
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+
     <!--JS-->
     <!-- jQuery Modal -->
     <!-- Remember to include jQuery :) -->
@@ -22,7 +24,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
     />
+    <!--P5 JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"
+      defer
+    ></script>
+
+    <!--My JS-->
     <script src="script.js" defer></script>
+    <script src="./src/p5-sketch.js" defer></script>
     <title>Test</title>
   </head>
   <body>
@@ -33,26 +43,59 @@
       <span style="--i: 3">r</span>
       <span style="--i: 4">l</span>
       <span style="--i: 4">d</span>
-      &nbsp;
-      <span style="--i: 5">o</span>
+
+      <span style="--i: 5; padding-left: 10px">o</span>
       <span style="--i: 6">f</span>
-      &nbsp;
-      <span style="--i: 7">a</span>
+
+      <span style="--i: 7; padding-left: 10px">a</span>
       <span style="--i: 8">w</span>
       <span style="--i: 9">e</span>
     </div>
     <!--End of cursor flag-->
     <header>
-      <h1>World Of Awe.Travelers Journel</h1>
-      <nav>home</nav>
+      <h1 class="title">World Of Awe.The Travelers Journel: Forever</h1>
+      <!-- <nav>home</nav> -->
     </header>
+
     <main>
-      <figure>
-        <a href="./material/html-pages/slide1.html"
-          ><img src="./material/mycomp.png" width="79" height="72"
-        /></a>
-        <figcaption>My Computer</figcaption>
-      </figure>
+      <!--Side Icons-->
+      <table>
+        <tbody>
+          <tr>
+            <td align="center">
+              <a href="./material/html-pages/slide1.html"
+                ><img src="./material/computer-4.png" width="69" height="62"
+              /></a>
+              <figcaption>My Computer</figcaption>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <a href="./material/html-pages/slide1.html"
+                ><img src="./material/the-net.png" width="69" height="62"
+              /></a>
+              <figcaption>The World</figcaption>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <a href="./material/html-pages/slide1.html"
+                ><img src="./material/direct.png" width="69" height="62"
+              /></a>
+              <figcaption>Author Files</figcaption>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <a href="https://worldofawe.net/" target="_blank"
+                ><img src="./material/icon_canyon.gif" width="69" height="62"
+              /></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!--End of Side Icons-->
+
       <!-- Modal HTML embedded directly into document -->
       <div id="ex1" class="modal">
         <p>Thanks for clicking. That felt good.</p>
@@ -60,7 +103,38 @@
       </div>
 
       <!-- Link to open the modal -->
-      <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+      <figure class="icon-container">
+        <a href="#ex1" rel="modal:open"
+          ><img src="./material/note.png" width="69" height="62"
+        /></a>
+        <figcaption>Story.txt</figcaption>
+      </figure>
+
+      <div id="ex2" class="modal">
+        <p>Yo yo yo.</p>
+        <a href="#" rel="modal:close">Close</a>
+      </div>
+
+      <figure class="icon-container-1">
+        <a href="#ex2" rel="modal:open"
+          ><img src="./material/note.png" width="69" height="62"
+        /></a>
+        <figcaption>Anthony.txt</figcaption>
+      </figure>
+
+      <!--P5 Sketch-->
+      <div class="window" style="width: 600px; height: 600px">
+        <div class="title-bar inactive">
+          <div class="title-bar-text">net.art</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body" id="p5-sketch"></div>
+      </div>
+      <!--End of P5-->
     </main>
     <!-- <footer></footer> -->
   </body>

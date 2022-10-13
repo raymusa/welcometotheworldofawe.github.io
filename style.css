@@ -18,19 +18,20 @@ main,
 footer {
   display: flex;
 }
-
+main {
+  flex-direction: row;
+}
 header {
   border: 2px solid pink;
-  height: 150px;
-  margin: 0px;
-  width: 100%;
-  flex-direction: column;
+  height: 100px;
+
+  inset: 0;
+  width: 100vw;
+
+  text-align: center;
+  background-color: #4b4b4b;
 }
 
-body {
-  font-family: "Press Start 2P";
-  letter-spacing: -2px;
-}
 nav {
   border: green 2px solid;
   height: 50px;
@@ -38,7 +39,7 @@ nav {
 }
 
 main {
-  border: red solid 2px;
+  /* border: red solid 2px; */
   height: 800px;
 }
 
@@ -49,9 +50,11 @@ footer {
 
 figcaption {
   position: relative;
+  font-weight: bold;
   font-family: Arial, Helvetica, sans-ser;
   letter-spacing: 0px;
   font-size: 13px;
+  text-align: center;
 }
 
 img:hover {
@@ -63,9 +66,48 @@ img:hover {
   box-shadow: 0px 0px 30px 0px rgba(255, 250, 100, 0.67);
 }
 
+table {
+  /* border: solid 2px orange; */
+  height: 60%;
+}
+
+.title {
+  font-family: "Press Start 2P";
+  font-size: 40px;
+  color: white;
+}
+.modal {
+  font-family: Arial, Helvetica, sans;
+}
+
+.icon-container {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  height: 10%;
+}
+.icon-container-1 {
+  position: absolute;
+  left: 20%;
+  top: 70%;
+  height: 10%;
+}
+.window {
+  position: absolute;
+  left: 60%;
+  top: 20%;
+}
+
+.window-body {
+  border: 2px black solid;
+  height: 94%;
+  background-color: black;
+}
+
 #follow {
   position: absolute;
-  letter-spacing: -6px;
+  letter-spacing: -1px;
+  font-family: Arial, Helvetica, sans;
 }
 
 #follow span {
