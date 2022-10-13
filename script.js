@@ -1,6 +1,8 @@
 console.log("working");
 //grab elements
-// const follow = document.querySelector("#follow");
+const button = document.querySelector("#click1");
+const button1 = document.querySelector("#click2");
+const button2 = document.querySelector("#click3");
 
 // jq
 $(document).bind("mousemove", (e) => {
@@ -14,7 +16,23 @@ $(document).bind("mousemove", (e) => {
   });
 });
 
-//listeners
-// follow.addEventListener('mousemove', ()=> {
+$("");
 
-// })
+//listeners
+button.addEventListener("click", () => {
+  const sound = new Audio("./material/min.wav");
+  sound.play();
+  console.log("click");
+});
+
+button1.addEventListener("click", () => {
+  const sound = new Audio("./material/DING.WAV");
+  sound.play();
+  console.log("click");
+});
+
+button2.addEventListener("click", () => {
+  const sound = new Audio("./material/error.wav");
+  sound.play();
+  console.log("click");
+});
