@@ -46,7 +46,7 @@ figcaption {
   text-align: center;
 }
 
-img:hover {
+.click-me:hover {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -57,6 +57,7 @@ img:hover {
 
 table {
   height: 60%;
+  margin-left: 0.5%;
 }
 
 .title {
@@ -93,6 +94,13 @@ table {
   top: 70%;
   height: 10%;
 }
+
+.icon-container-2 {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  height: 10%;
+}
 .window {
   position: absolute;
   left: 60%;
@@ -105,10 +113,24 @@ table {
   background-color: black;
 }
 
+#previous {
+  position: relative;
+  left: 35%;
+  bottom: 15%;
+}
+
+#next {
+  position: relative;
+  left: 37%;
+  bottom: 15%;
+}
+
 #follow {
   position: absolute;
   letter-spacing: -1px;
   font-family: Arial, Helvetica, sans;
+  font-size: 18px;
+  /* z-index: 99; */
 }
 
 #follow span {
@@ -117,6 +139,7 @@ table {
   /* font-family: Arial, Helvetica, sans-ser; */
   animation: wavy 1.5s ease-in-out infinite;
   animation-delay: calc(0.1s * var(--i));
+  z-index: 3;
 }
 
 /*animations*/

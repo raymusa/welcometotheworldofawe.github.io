@@ -10,13 +10,14 @@ $(document).bind("mousemove", (e) => {
     left: e.pageX + 15,
     top: e.pageY + 1,
   });
-
-  $("#follow").click(function () {
-    $("span").stop();
-  });
 });
 
-$("");
+$(function () {
+  $("#icon").draggable();
+  $("#drag-icon").draggable();
+  $("#drag-icon1").draggable();
+  $("#drag-window").draggable();
+});
 
 //listeners
 button.addEventListener("click", () => {

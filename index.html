@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="https://unpkg.com/98.css" />
 
     <!--JS-->
-    <!-- jQuery Modal -->
-    <!-- Remember to include jQuery :) -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
     <!-- jQuery Modal -->
@@ -24,6 +23,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
     />
+
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
     <!--P5 JS-->
     <script
       src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"
@@ -33,7 +35,8 @@
     <!--My JS-->
     <script src="script.js" defer></script>
     <script src="./src/p5-sketch.js" defer></script>
-    <title>Test</title>
+    <title>world of awe</title>
+    <link rel="icon" type="image/x-icon" href="icons8-art-16.png" />
   </head>
   <body>
     <!--Start of cursor flag-->
@@ -64,31 +67,47 @@
           <tr>
             <td align="center">
               <a href="./material/html-pages/slide1.html"
-                ><img src="./material/computer-4.png" width="69" height="62"
+                ><img
+                  class="click-me"
+                  src="./material/computer-4.png"
+                  width="69"
+                  height="62"
               /></a>
               <figcaption>My Computer</figcaption>
             </td>
           </tr>
           <tr>
             <td align="center">
-              <a href="./material/html-pages/slide1.html"
-                ><img src="./material/the-net.png" width="69" height="62"
+              <a href="#"
+                ><img
+                  class="click-me"
+                  src="./material/the-net.png"
+                  width="69"
+                  height="62"
               /></a>
               <figcaption>The World</figcaption>
             </td>
           </tr>
           <tr>
             <td align="center">
-              <a href="./material/html-pages/slide1.html"
-                ><img src="./material/direct.png" width="69" height="62"
+              <a href="#"
+                ><img
+                  class="click-me"
+                  src="./material/direct.png"
+                  width="69"
+                  height="62"
               /></a>
-              <figcaption>Author Files</figcaption>
+              <figcaption>Yael Kanarek</figcaption>
             </td>
           </tr>
           <tr>
             <td align="center">
               <a href="https://worldofawe.net/" target="_blank"
-                ><img src="./material/icon_canyon.gif" width="69" height="62"
+                ><img
+                  class="click-me"
+                  src="./material/icon_canyon.gif"
+                  width="69"
+                  height="62"
               /></a>
             </td>
           </tr>
@@ -98,34 +117,61 @@
 
       <!-- Modal HTML embedded directly into document -->
       <div id="ex1" class="modal" style="background-color: #4b4b4b">
+        <h4>The Purpose</h4>
         <p>Thanks for clicking. That felt good.</p>
         <a href="#" rel="modal:close">Close</a>
       </div>
 
       <!-- Link to open the modal -->
-      <figure class="icon-container">
+      <figure class="icon-container" id="icon">
         <a href="#ex1" rel="modal:open"
-          ><img src="./material/note.png" width="69" height="62"
+          ><img
+            class="click-me"
+            src="./material/note.png"
+            width="69"
+            height="62"
         /></a>
         <figcaption>Story.txt</figcaption>
       </figure>
 
       <div id="ex2" class="modal" style="background-color: #4b4b4b">
+        <h4>Anthony's thoughts</h4>
         <p>Yo yo yo.</p>
         <a href="#" rel="modal:close">Close</a>
       </div>
 
-      <figure class="icon-container-1">
+      <figure class="icon-container-1" id="drag-icon">
         <a href="#ex2" rel="modal:open"
-          ><img src="./material/note.png" width="69" height="62"
+          ><img
+            class="click-me"
+            src="./material/note.png"
+            width="69"
+            height="62"
         /></a>
         <figcaption>Anthony.txt</figcaption>
       </figure>
+      <!--End of txt modals-->
+      <!--Image modals-->
+      <div id="ex3" class="modal" style="background-color: #4b4b4b">
+        <img src="./material/art-images/img2.png" />
+      </div>
+
+      <figure class="icon-container-2" id="drag-icon1">
+        <a href="#ex3" rel="modal:open"
+          ><img
+            class="click-me"
+            src="./material/art-images/img5.png"
+            width="69"
+            height="62"
+        /></a>
+        <figcaption>photo.jpg</figcaption>
+      </figure>
+      <!--End of images-->
 
       <!--P5 Sketch-->
-      <div class="window" style="width: 600px; height: 600px">
+      <div class="window" style="width: 600px; height: 600px" id="drag-window">
         <div class="title-bar inactive">
-          <div class="title-bar-text">net.art</div>
+          <div class="title-bar-text" style="margin-left: 1%">net.art</div>
           <div class="title-bar-controls">
             <button id="click1" aria-label="Minimize"></button>
             <button id="click2" aria-label="Maximize"></button>
@@ -133,6 +179,8 @@
           </div>
         </div>
         <div class="window-body" id="p5-sketch"></div>
+        <button id="previous">Previous</button>
+        <button id="next">Next</button>
       </div>
       <!--End of P5-->
     </main>
