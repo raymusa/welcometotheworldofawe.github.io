@@ -9,8 +9,14 @@ const toggle = document.querySelector("#toggle");
 
 const window1 = document.querySelector(".drag-window1");
 const window2 = document.querySelector(".drag-window2");
+const window3 = document.querySelector(".drag-window3");
+const window4 = document.querySelector(".drag-window4");
+const window5 = document.querySelector(".drag-window5");
 const closed = document.querySelector("#close");
 const closedWindow2 = document.querySelector("#close-window2");
+const closedWindow3 = document.querySelector("#close-window3");
+const closedWindow4 = document.querySelector("#close-window4");
+const closedWindow5 = document.querySelector("#close-window5");
 
 const clicked = () => {
   const sound = new Audio("./material/click.wav");
@@ -36,6 +42,9 @@ $(function () {
   $("#drag-window").draggable();
   $(".drag-window1").draggable();
   $(".drag-window2").draggable();
+  $(".drag-window3").draggable();
+  $(".drag-window4").draggable();
+  $(".drag-window5").draggable();
   $(".side-icon").draggable();
   $(".side-icon1").draggable();
   $(".side-icon2").draggable();
@@ -68,6 +77,15 @@ toggle.addEventListener("click", () => {
 
   if (window2.style.display !== "none") window2.style.display = "none";
   else window2.style.display = "block";
+
+  if (window3.style.display !== "none") window3.style.display = "none";
+  else window3.style.display = "block";
+
+  if (window4.style.display !== "none") window4.style.display = "none";
+  else window4.style.display = "block";
+
+  if (window5.style.display !== "none") window5.style.display = "none";
+  else window5.style.display = "block";
 });
 
 closed.addEventListener("click", () => {
@@ -76,4 +94,16 @@ closed.addEventListener("click", () => {
 
 closedWindow2.addEventListener("click", () => {
   if (window2.style.display === "block") window2.style.display = "none";
+});
+
+closedWindow3.addEventListener("click", () => {
+  if (window3.style.display === "block") window3.style.display = "none";
+});
+
+closedWindow4.addEventListener("click", () => {
+  if (window4.style.display === "block") window4.style.display = "none";
+});
+
+closedWindow5.addEventListener("click", () => {
+  if (window5.style.display === "block") window5.style.display = "none";
 });
