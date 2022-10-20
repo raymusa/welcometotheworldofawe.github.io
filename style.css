@@ -37,6 +37,11 @@ main {
   height: 800px;
 }
 
+.resize-me {
+  width: 100%;
+  height: 100%;
+}
+
 figcaption {
   position: relative;
   font-weight: bold;
@@ -72,6 +77,11 @@ table {
   color: white;
 }
 
+.modal > p {
+  font-size: 16px;
+  margin-top: -4%;
+}
+
 .modal a {
   text-decoration: none;
   transition: ease-in 200ms;
@@ -101,6 +111,28 @@ table {
   top: 30%;
   height: 10%;
 }
+
+.icon-container-3 {
+  position: absolute;
+  left: 34%;
+  top: 70%;
+  height: 10%;
+}
+
+.icon-container-4 {
+  position: absolute;
+  left: 8%;
+  top: 64%;
+  height: 10%;
+}
+
+.icon-container-5 {
+  position: absolute;
+  left: 70%;
+  top: 17%;
+  height: 10%;
+}
+
 .window {
   position: absolute;
   left: 60%;

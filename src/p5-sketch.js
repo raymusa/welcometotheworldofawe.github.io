@@ -2,10 +2,14 @@ console.log("hello");
 
 document.querySelector("#previous").addEventListener("click", () => {
   if (index > 1) index--;
+  const sound = new Audio("./material/click.wav");
+  sound.play();
 });
 
 document.querySelector("#next").addEventListener("click", () => {
   if (index < images.length - 1) index++;
+  const sound = new Audio("./material/click.wav");
+  sound.play();
 });
 
 let images = [];

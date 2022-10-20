@@ -1,0 +1,170 @@
+@font-face {
+  font-family: myFont;
+  src: url(adobe_dia.ttf);
+}
+body {
+  background: url("img/bgDesktop.png");
+  background-color: rgb(49, 109, 99);
+}
+
+.mainHome:hover {
+  color: red;
+}
+#loveL1 {
+  height: 75%;
+  width: 75%;
+  margin-top: 80px;
+  margin-left: 21.5%;
+}
+#des {
+  width: 475px;
+  margin-top: 40px;
+  margin-left: 21.5%;
+}
+#deskTop {
+  width: 480px;
+  margin-left: 21.5%;
+  margin-top: 85px;
+}
+#sunset {
+  margin-top: 80px;
+  width: 400px;
+  margin-left: 27%;
+}
+#sun {
+  width: 400px;
+  margin-left: 27%;
+}
+#icons {
+  width: 500px;
+  margin-left: 20%;
+  margin-top: -120px;
+}
+#des1 {
+  width: 475px;
+  margin-left: 21.5%;
+  margin-top: 50px;
+}
+#textBox {
+  z-index: 3;
+}
+#text {
+  font-family: arial;
+  text-align: justify;
+  color: white;
+  margin-left: 10%;
+  margin-top: 30px;
+  margin-right: 10%;
+}
+h2 {
+  color: white;
+  font-size: 25px;
+  font-variant-caps: all-small-caps;
+  font-family: arial;
+  margin-left: 10%;
+}
+#intoSlide {
+  z-index: 3;
+  margin-top: 15%;
+  margin-left: 20%;
+  font-size: 95px;
+  color: rgb(49, 109, 99);
+  font-family: myFont;
+}
+#awe {
+  z-index: 3;
+  margin-top: -15%;
+  margin-left: 10%;
+  font-size: 95px;
+  color: black;
+  font-family: myFont;
+}
+.imgBox {
+  z-index: 1;
+  position: absolute;
+  border: 5px solid rgb(140, 3, 53);
+  background-color: rgb(6, 45, 62);
+  top: 90px;
+  margin-left: 38%;
+  width: 650px;
+  height: 600px;
+}
+.textBox {
+  z-index: 2;
+  position: absolute;
+  border: 5px solid rgb(140, 3, 53);
+  background-color: rgb(140, 3, 53);
+  top: 150px;
+  margin-left: 15%;
+  width: 450px;
+  height: 500px;
+}
+.exit {
+  position: absolute;
+  z-index: 3;
+  margin-left: 75%;
+  font-variant-caps: petite-caps;
+  font-family: myFont;
+  font-size: 35px;
+  top: 685px;
+  background-color: rgb(217, 121, 65);
+  border: 5px solid rgb(217, 121, 65);
+  width: 15px;
+  height: 15px;
+}
+#exit {
+  margin-top: -65%;
+  margin-left: 10%;
+}
+.next {
+  position: absolute;
+  z-index: 3;
+  margin-left: 75%;
+  font-variant-caps: petite-caps;
+  font-family: myFont;
+  font-size: 35px;
+  top: 685px;
+  background-color: rgb(217, 121, 65);
+  border: 5px solid rgb(217, 121, 65);
+  width: 40px;
+  height: 15px;
+}
+#next {
+  margin-top: -27%;
+  z-index: 4;
+}
+.expose {
+  font-size: 35px;
+  font-variant-caps: petite-caps;
+  font-family: myFont;
+  z-index: 3;
+  position: absolute;
+  margin-left: 23%;
+  top: 610px;
+  background-color: rgb(217, 121, 65);
+  border: 5px solid rgb(217, 121, 65);
+  width: 60px;
+  height: 15px;
+}
+.expose1 {
+  font-size: 35px;
+  font-variant-caps: petite-caps;
+  font-family: myFont;
+  z-index: 3;
+  position: absolute;
+  margin-left: 23%;
+  top: 610px;
+  left: 5%;
+  background-color: rgb(217, 121, 65);
+  border: 5px solid rgb(217, 121, 65);
+  width: 60px;
+  height: 15px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+p {
+  margin-top: -19%;
+  z-index: 4;
+}

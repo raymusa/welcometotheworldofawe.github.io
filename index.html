@@ -5,16 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--CSS-->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Press Start 2P|"
     />
-
     <link rel="stylesheet" href="https://unpkg.com/98.css" />
-
     <!--JS-->
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
     <!-- jQuery Modal -->
@@ -24,7 +21,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
     />
 
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js" defer></script>
 
     <!--P5 JS-->
     <script
@@ -65,8 +62,8 @@
       <table>
         <tbody>
           <tr>
-            <td align="center">
-              <a href="./material/html-pages/slide1.html"
+            <td align="center" class="side-icon">
+              <a onclick="clicked()" href="#" id="toggle"
                 ><img
                   class="click-me"
                   src="./material/computer-4.png"
@@ -77,8 +74,8 @@
             </td>
           </tr>
           <tr>
-            <td align="center">
-              <a href="#"
+            <td align="center" class="side-icon1">
+              <a href="mayaHome.html" onclick="clicked()"
                 ><img
                   class="click-me"
                   src="./material/the-net.png"
@@ -89,8 +86,8 @@
             </td>
           </tr>
           <tr>
-            <td align="center">
-              <a href="#"
+            <td align="center" class="side-icon2">
+              <a href="#" onclick="clicked()"
                 ><img
                   class="click-me"
                   src="./material/direct.png"
@@ -101,8 +98,11 @@
             </td>
           </tr>
           <tr>
-            <td align="center">
-              <a href="https://worldofawe.net/" target="_blank"
+            <td align="center" class="side-icon3">
+              <a
+                href="https://worldofawe.net/"
+                target="_blank"
+                onclick="clicked()"
                 ><img
                   class="click-me"
                   src="./material/icon_canyon.gif"
@@ -118,7 +118,16 @@
       <!-- Modal HTML embedded directly into document -->
       <div id="ex1" class="modal" style="background-color: #4b4b4b">
         <h4>The Purpose</h4>
-        <p>Thanks for clicking. That felt good.</p>
+        <p>
+          World Of Awe Chapter 1: Forever is a collection of love letters to a
+          different nameless figure, who is frequently referred to as "beloved".
+          These letters in the work express the Traveler's worries, highlighting
+          a greater societal oddity in which the Traveler's past residence in
+          New York stops them from projecting liberal illusions of vitalization
+          onto the Desert, despite the fact that their main purpose is temporary
+          relief.
+          <br />
+        </p>
         <a href="#" rel="modal:close">Close</a>
       </div>
 
@@ -126,6 +135,7 @@
       <figure class="icon-container" id="icon">
         <a href="#ex1" rel="modal:open"
           ><img
+            onclick="clicked()"
             class="click-me"
             src="./material/note.png"
             width="69"
@@ -143,6 +153,7 @@
       <figure class="icon-container-1" id="drag-icon">
         <a href="#ex2" rel="modal:open"
           ><img
+            onclick="clicked()"
             class="click-me"
             src="./material/note.png"
             width="69"
@@ -152,19 +163,80 @@
       </figure>
       <!--End of txt modals-->
       <!--Image modals-->
-      <div id="ex3" class="modal" style="background-color: #4b4b4b">
-        <img src="./material/art-images/img2.png" />
+      <div
+        id="ex3"
+        class="modal"
+        style="background-color: #4b4b4b; max-width: 900px"
+      >
+        <img class="resize-me" src="./material/world/rocky.png" />
       </div>
 
       <figure class="icon-container-2" id="drag-icon1">
-        <a href="#ex3" rel="modal:open"
+        <a href="#ex3" rel="modal:open" onclick="clicked()"
           ><img
             class="click-me"
-            src="./material/art-images/img5.png"
+            src="./material/world/rocky.png"
             width="69"
             height="62"
         /></a>
-        <figcaption>photo.jpg</figcaption>
+        <figcaption>world.jpg</figcaption>
+      </figure>
+
+      <div
+        id="ex4"
+        class="modal"
+        style="background-color: #4b4b4b; max-width: 900px"
+      >
+        <img class="resize-me" src="./material/world/enter.png" />
+      </div>
+
+      <figure class="icon-container-3" id="drag-icon2">
+        <a href="#ex4" rel="modal:open" onclick="clicked()"
+          ><img
+            class="click-me"
+            src="./material/world/enter.png"
+            width="69"
+            height="62"
+        /></a>
+        <figcaption>enter.jpg</figcaption>
+      </figure>
+
+      <div
+        id="ex5"
+        class="modal"
+        style="background-color: #4b4b4b; max-width: 900px"
+      >
+        <img class="resize-me" src="./material/world/fly.png" />
+      </div>
+
+      <figure class="icon-container-4" id="drag-icon3">
+        <a href="#ex5" rel="modal:open" onclick="clicked()"
+          ><img
+            class="click-me"
+            src="./material/world/fly.png"
+            width="69"
+            height="62"
+        /></a>
+        <figcaption>fly.jpg</figcaption>
+      </figure>
+
+      <div
+        id="ex6"
+        class="modal"
+        style="background-color: #4b4b4b; max-width: 400px"
+      >
+        <img class="resize-me" src="./material/world/mood-ring.png" />
+      </div>
+
+      <figure class="icon-container-5" id="drag-icon4">
+        <a href="#ex6" rel="modal:open" onclick="clicked()"
+          ><img
+            class="click-me"
+            src="./material/world/mood-ring.png"
+            width="69"
+            height="62"
+        /></a>
+        <figcaption>ring.jpg</figcaption>
       </figure>
       <!--End of images-->
 
@@ -183,6 +255,45 @@
         <button id="next">Next</button>
       </div>
       <!--End of P5-->
+      <!--Hidden Divs-->
+      <!-- <div id="test" style="display: none">hello this worked</div> -->
+      <div
+        class="window drag-window1"
+        style="width: 600px; height: 600px; display: none; left: 15%"
+        id="test"
+      >
+        <div class="title-bar inactive">
+          <div class="title-bar-text" style="margin-left: 1%">net.art</div>
+          <div class="title-bar-controls">
+            <button onClick="clicked()" id="close" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <img class="resize-me" src="http://i.stack.imgur.com/SBv4T.gif" />
+        </div>
+      </div>
+
+      <div
+        class="window drag-window2"
+        style="width: 600px; height: 600px; display: none; left: 55%"
+        id="test"
+      >
+        <div class="title-bar inactive">
+          <div class="title-bar-text" style="margin-left: 1%">net.art</div>
+          <div class="title-bar-controls">
+            <button
+              onClick="clicked()"
+              id="close-window2"
+              aria-label="Close"
+            ></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <img class="resize-me" src="http://i.stack.imgur.com/SBv4T.gif" />
+        </div>
+      </div>
+
+      <!--End of Hidden Divs-->
     </main>
     <!-- <footer></footer> -->
   </body>
